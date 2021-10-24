@@ -1,27 +1,33 @@
 {
-  "name": "client",
+  "name": "react-crud-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "axios": "^0.21.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-chart-histogram": "^0.2.4",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "sass": "^1.43.3",
+    "scandir": "^0.1.2",
+    "scss": "^0.2.4",
+    "serve": "^11.3.2",
+    "sweetalert2": "^9.17.1",
+    "sweetalert2-react-content": "^3.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -34,5 +40,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "jest-enzyme": "^7.1.2",
+    "redux-devtools": "^3.6.1",
+    "redux-devtools-extension": "^2.13.8"
   }
 }
